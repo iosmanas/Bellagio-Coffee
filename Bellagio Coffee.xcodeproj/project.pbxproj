@@ -11,6 +11,7 @@
 		D531D6E529891DD6006B3B84 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531D6E429891DD6006B3B84 /* UIView.swift */; };
 		D531D6E729891F7B006B3B84 /* OnboardingSlides.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531D6E629891F7B006B3B84 /* OnboardingSlides.swift */; };
 		D531D6E9298921FD006B3B84 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531D6E8298921FD006B3B84 /* OnboardingCollectionViewCell.swift */; };
+		D53EE559298969D2005487C4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53EE558298969D2005487C4 /* HomeViewController.swift */; };
 		D54752002987ED360007C5C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54751FF2987ED360007C5C3 /* AppDelegate.swift */; };
 		D54752022987ED360007C5C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54752012987ED360007C5C3 /* SceneDelegate.swift */; };
 		D54752072987ED370007C5C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D54752052987ED370007C5C3 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		D531D6E429891DD6006B3B84 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		D531D6E629891F7B006B3B84 /* OnboardingSlides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlides.swift; sourceTree = "<group>"; };
 		D531D6E8298921FD006B3B84 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		D53EE558298969D2005487C4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D54751FC2987ED360007C5C3 /* Bellagio Coffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bellagio Coffee.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D54751FF2987ED360007C5C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D54752012987ED360007C5C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		D531D6DE29891AC5006B3B84 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D53EE557298969B9005487C4 /* Home */,
 				D531D6E029891AF2006B3B84 /* Onboarding */,
 			);
 			path = Views;
@@ -81,6 +84,14 @@
 				D531D6E429891DD6006B3B84 /* UIView.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D53EE557298969B9005487C4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D53EE558298969D2005487C4 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		D54751F32987ED360007C5C3 = {
@@ -192,6 +203,7 @@
 				D531D6E729891F7B006B3B84 /* OnboardingSlides.swift in Sources */,
 				D54752022987ED360007C5C3 /* SceneDelegate.swift in Sources */,
 				D531D6E229891B22006B3B84 /* OnboardingViewController.swift in Sources */,
+				D53EE559298969D2005487C4 /* HomeViewController.swift in Sources */,
 				D531D6E9298921FD006B3B84 /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
