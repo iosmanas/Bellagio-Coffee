@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D531D6E229891B22006B3B84 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531D6E129891B22006B3B84 /* OnboardingViewController.swift */; };
+		D531D6E529891DD6006B3B84 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531D6E429891DD6006B3B84 /* UIView.swift */; };
+		D531D6E729891F7B006B3B84 /* OnboardingSlides.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531D6E629891F7B006B3B84 /* OnboardingSlides.swift */; };
+		D531D6E9298921FD006B3B84 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531D6E8298921FD006B3B84 /* OnboardingCollectionViewCell.swift */; };
 		D54752002987ED360007C5C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54751FF2987ED360007C5C3 /* AppDelegate.swift */; };
 		D54752022987ED360007C5C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54752012987ED360007C5C3 /* SceneDelegate.swift */; };
-		D54752042987ED360007C5C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54752032987ED360007C5C3 /* ViewController.swift */; };
 		D54752072987ED370007C5C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D54752052987ED370007C5C3 /* Main.storyboard */; };
 		D54752092987ED390007C5C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D54752082987ED390007C5C3 /* Assets.xcassets */; };
 		D547520C2987ED390007C5C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D547520A2987ED390007C5C3 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D531D6E129891B22006B3B84 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		D531D6E429891DD6006B3B84 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		D531D6E629891F7B006B3B84 /* OnboardingSlides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlides.swift; sourceTree = "<group>"; };
+		D531D6E8298921FD006B3B84 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		D54751FC2987ED360007C5C3 /* Bellagio Coffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bellagio Coffee.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D54751FF2987ED360007C5C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D54752012987ED360007C5C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D54752032987ED360007C5C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D54752062987ED370007C5C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D54752082987ED390007C5C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D547520B2987ED390007C5C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +43,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D531D6DD29891ABD006B3B84 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D531D6E629891F7B006B3B84 /* OnboardingSlides.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D531D6DE29891AC5006B3B84 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D531D6E029891AF2006B3B84 /* Onboarding */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D531D6DF29891AE4006B3B84 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		D531D6E029891AF2006B3B84 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				D531D6E129891B22006B3B84 /* OnboardingViewController.swift */,
+				D531D6E8298921FD006B3B84 /* OnboardingCollectionViewCell.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		D531D6E329891DB8006B3B84 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D531D6E429891DD6006B3B84 /* UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		D54751F32987ED360007C5C3 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +102,12 @@
 		D54751FE2987ED360007C5C3 /* Bellagio Coffee */ = {
 			isa = PBXGroup;
 			children = (
+				D531D6E329891DB8006B3B84 /* Extensions */,
+				D531D6DF29891AE4006B3B84 /* CustomViews */,
+				D531D6DE29891AC5006B3B84 /* Views */,
+				D531D6DD29891ABD006B3B84 /* Models */,
 				D54751FF2987ED360007C5C3 /* AppDelegate.swift */,
 				D54752012987ED360007C5C3 /* SceneDelegate.swift */,
-				D54752032987ED360007C5C3 /* ViewController.swift */,
 				D54752052987ED370007C5C3 /* Main.storyboard */,
 				D54752082987ED390007C5C3 /* Assets.xcassets */,
 				D547520A2987ED390007C5C3 /* LaunchScreen.storyboard */,
@@ -138,9 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D54752042987ED360007C5C3 /* ViewController.swift in Sources */,
+				D531D6E529891DD6006B3B84 /* UIView.swift in Sources */,
 				D54752002987ED360007C5C3 /* AppDelegate.swift in Sources */,
+				D531D6E729891F7B006B3B84 /* OnboardingSlides.swift in Sources */,
 				D54752022987ED360007C5C3 /* SceneDelegate.swift in Sources */,
+				D531D6E229891B22006B3B84 /* OnboardingViewController.swift in Sources */,
+				D531D6E9298921FD006B3B84 /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,9 +355,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Bellagio-Coffee.Bellagio-Coffee";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +385,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Bellagio-Coffee.Bellagio-Coffee";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
