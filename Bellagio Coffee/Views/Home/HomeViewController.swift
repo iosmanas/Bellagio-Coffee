@@ -10,6 +10,9 @@ import UIKit
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var categoryCollectionView: UICollectionView!
+    @IBOutlet weak var popularCollectionView: UICollectionView!
+    
+    
     
     var categoties: [DishCategory] = [
     
@@ -19,6 +22,14 @@ class HomeViewController: UIViewController {
         .init(id: "id1", name: "Kyrgyz Dish4", image: "https://picsum.photos/100/200"),
         .init(id: "id1", name: "Kyrgyz Dish5", image: "https://picsum.photos/100/200")
 
+    ]
+    
+    var populars: [Dish] = [
+    
+        .init(id: "id1", name: "Borsok", image: "https://picsum.photos/100/200", description: "This is the best I have ever tasted", calories: 345),
+        .init(id: "id1", name: "New York", image: "https://picsum.photos/100/200", description: "This is the best I have ever tasted", calories: 145),
+        .init(id: "id1", name: "Pizza", image: "https://picsum.photos/100/200", description: "This is the best I have ever tasted", calories: 3435),
+    
     ]
     
     
@@ -37,6 +48,8 @@ class HomeViewController: UIViewController {
 
     private func registerCells() {
         categoryCollectionView.register(UINib(nibName: CategoryCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: CategoryCollectionViewCell.identifier)
+        
+        popularCollectionView.register(UINib(nibName: DishPortraitCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: DishPortraitCollectionViewCell.identifier)
     }
 
 }
@@ -45,17 +58,43 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCollectionViewCell.identifier, for: indexPath) as! CategoryCollectionViewCell
         
-        cell.setUp(category: categoties[indexPath.row])
+        switch collectionView {
+            
+        case categoryCollectionView:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCollectionViewCell.identifier, for: indexPath) as! CategoryCollectionViewCell
+            
+            cell.setUp(category: categoties[indexPath.row])
+            
+            return cell
+            
+        case popularCollectionView:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DishPortraitCollectionViewCell.identifier, for: indexPath) as! DishPortraitCollectionViewCell
+            
+            cell.setUp(dish: populars[indexPath.row])
+            
+            return cell
+            
+        default: return UICollectionViewCell()
+        }
         
-        return cell
+        
+        
+        
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return categoties.count
+        switch collectionView {
+            
+        case categoryCollectionView:
+            return categoties.count
+            
+        case popularCollectionView:
+            return populars.count
+            
+        default: return 0
+        }
     }
-    
-    
 }
 
