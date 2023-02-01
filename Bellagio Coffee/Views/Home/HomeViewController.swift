@@ -32,12 +32,20 @@ class HomeViewController: UIViewController {
     
     ]
     
+    var specials: [Dish] = [
+    
+        .init(id: "id1", name: "Kuurdak", image: "https://picsum.photos/100/200", description: "This is my favourite dish", calories: 145),
+        .init(id: "id1", name: "Shorpo", image: "https://picsum.photos/100/200", description: "This is the best I have ever tasted", calories: 3435),
+    ]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         categoryCollectionView.delegate = self
         categoryCollectionView.dataSource = self
+        
+        
         
 //        MARK: Private function register cells
         registerCells()
@@ -47,15 +55,33 @@ class HomeViewController: UIViewController {
     //        MARK: Private function register cells
 
     private func registerCells() {
+        
         categoryCollectionView.register(UINib(nibName: CategoryCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: CategoryCollectionViewCell.identifier)
         
         popularCollectionView.register(UINib(nibName: DishPortraitCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: DishPortraitCollectionViewCell.identifier)
+        
+        
     }
 
 }
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        switch collectionView {
+            
+        case categoryCollectionView:
+            return categoties.count
+            
+        case popularCollectionView:
+            return populars.count
+            
+        
+            
+        default: return 0
+        }
+    }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
@@ -75,7 +101,10 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             
             return cell
             
+        
+            
         default: return UICollectionViewCell()
+            
         }
         
         
@@ -84,17 +113,6 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        switch collectionView {
-            
-        case categoryCollectionView:
-            return categoties.count
-            
-        case popularCollectionView:
-            return populars.count
-            
-        default: return 0
-        }
-    }
+    
 }
 

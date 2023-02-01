@@ -153,6 +153,7 @@
 		D58EBE142989B0C800E0B3CA /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				D58EBE2B298A88E900E0B3CA /* DishLandScapeCollectionViewCell */,
 				D58EBE24298A7CB000E0B3CA /* DishPortraitCollectionViewCell */,
 				D58EBE152989B0DE00E0B3CA /* CategoryCollectionViewCells */,
 			);
@@ -183,6 +184,13 @@
 				D58EBE26298A7D5600E0B3CA /* DishPortraitCollectionViewCell.xib */,
 			);
 			path = DishPortraitCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		D58EBE2B298A88E900E0B3CA /* DishLandScapeCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DishLandScapeCollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
