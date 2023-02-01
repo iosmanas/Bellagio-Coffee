@@ -17,6 +17,12 @@
 		D54752072987ED370007C5C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D54752052987ED370007C5C3 /* Main.storyboard */; };
 		D54752092987ED390007C5C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D54752082987ED390007C5C3 /* Assets.xcassets */; };
 		D547520C2987ED390007C5C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D547520A2987ED390007C5C3 /* LaunchScreen.storyboard */; };
+		D58EBE182989B7C500E0B3CA /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58EBE162989B7C500E0B3CA /* CategoryCollectionViewCell.swift */; };
+		D58EBE192989B7C500E0B3CA /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D58EBE172989B7C500E0B3CA /* CategoryCollectionViewCell.xib */; };
+		D58EBE1B2989BA0E00E0B3CA /* DishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58EBE1A2989BA0E00E0B3CA /* DishCategory.swift */; };
+		D58EBE1E2989BC1C00E0B3CA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D58EBE1D2989BC1C00E0B3CA /* Kingfisher */; };
+		D58EBE202989BE5000E0B3CA /* Swift+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58EBE1F2989BE5000E0B3CA /* Swift+Extension.swift */; };
+		D58EBE23298A74C500E0B3CA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58EBE22298A74C500E0B3CA /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,11 @@
 		D54752082987ED390007C5C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D547520B2987ED390007C5C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D547520D2987ED390007C5C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D58EBE162989B7C500E0B3CA /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		D58EBE172989B7C500E0B3CA /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		D58EBE1A2989BA0E00E0B3CA /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
+		D58EBE1F2989BE5000E0B3CA /* Swift+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift+Extension.swift"; sourceTree = "<group>"; };
+		D58EBE22298A74C500E0B3CA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D58EBE1E2989BC1C00E0B3CA /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				D531D6E629891F7B006B3B84 /* OnboardingSlides.swift */,
+				D58EBE1A2989BA0E00E0B3CA /* DishCategory.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -65,6 +78,8 @@
 		D531D6DF29891AE4006B3B84 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				D58EBE21298A74A200E0B3CA /* CardView */,
+				D58EBE142989B0C800E0B3CA /* CollectionViewCells */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -82,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				D531D6E429891DD6006B3B84 /* UIView.swift */,
+				D58EBE1F2989BE5000E0B3CA /* Swift+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -127,6 +143,31 @@
 			path = "Bellagio Coffee";
 			sourceTree = "<group>";
 		};
+		D58EBE142989B0C800E0B3CA /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				D58EBE152989B0DE00E0B3CA /* CategoryCollectionViewCells */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		D58EBE152989B0DE00E0B3CA /* CategoryCollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				D58EBE162989B7C500E0B3CA /* CategoryCollectionViewCell.swift */,
+				D58EBE172989B7C500E0B3CA /* CategoryCollectionViewCell.xib */,
+			);
+			path = CategoryCollectionViewCells;
+			sourceTree = "<group>";
+		};
+		D58EBE21298A74A200E0B3CA /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				D58EBE22298A74C500E0B3CA /* CardView.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +184,9 @@
 			dependencies = (
 			);
 			name = "Bellagio Coffee";
+			packageProductDependencies = (
+				D58EBE1D2989BC1C00E0B3CA /* Kingfisher */,
+			);
 			productName = "Bellagio Coffee";
 			productReference = D54751FC2987ED360007C5C3 /* Bellagio Coffee.app */;
 			productType = "com.apple.product-type.application";
@@ -171,6 +215,9 @@
 				Base,
 			);
 			mainGroup = D54751F32987ED360007C5C3;
+			packageReferences = (
+				D58EBE1C2989BC1C00E0B3CA /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = D54751FD2987ED360007C5C3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -185,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D58EBE192989B7C500E0B3CA /* CategoryCollectionViewCell.xib in Resources */,
 				D547520C2987ED390007C5C3 /* LaunchScreen.storyboard in Resources */,
 				D54752092987ED390007C5C3 /* Assets.xcassets in Resources */,
 				D54752072987ED370007C5C3 /* Main.storyboard in Resources */,
@@ -198,12 +246,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D58EBE182989B7C500E0B3CA /* CategoryCollectionViewCell.swift in Sources */,
 				D531D6E529891DD6006B3B84 /* UIView.swift in Sources */,
 				D54752002987ED360007C5C3 /* AppDelegate.swift in Sources */,
 				D531D6E729891F7B006B3B84 /* OnboardingSlides.swift in Sources */,
 				D54752022987ED360007C5C3 /* SceneDelegate.swift in Sources */,
 				D531D6E229891B22006B3B84 /* OnboardingViewController.swift in Sources */,
 				D53EE559298969D2005487C4 /* HomeViewController.swift in Sources */,
+				D58EBE202989BE5000E0B3CA /* Swift+Extension.swift in Sources */,
+				D58EBE1B2989BA0E00E0B3CA /* DishCategory.swift in Sources */,
+				D58EBE23298A74C500E0B3CA /* CardView.swift in Sources */,
 				D531D6E9298921FD006B3B84 /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +480,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D58EBE1C2989BC1C00E0B3CA /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D58EBE1D2989BC1C00E0B3CA /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D58EBE1C2989BC1C00E0B3CA /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D54751F42987ED360007C5C3 /* Project object */;
 }
