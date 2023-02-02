@@ -30,6 +30,9 @@
 		D58EBE27298A7D5600E0B3CA /* DishPortraitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58EBE25298A7D5600E0B3CA /* DishPortraitCollectionViewCell.swift */; };
 		D58EBE28298A7D5600E0B3CA /* DishPortraitCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D58EBE26298A7D5600E0B3CA /* DishPortraitCollectionViewCell.xib */; };
 		D58EBE2A298A7F8D00E0B3CA /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58EBE29298A7F8D00E0B3CA /* Dish.swift */; };
+		D5BDC14E298C1769000B63D0 /* DishListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BDC14C298C1769000B63D0 /* DishListTableViewCell.swift */; };
+		D5BDC14F298C1769000B63D0 /* DishListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5BDC14D298C1769000B63D0 /* DishListTableViewCell.xib */; };
+		D5BDC152298C1A7F000B63D0 /* ListDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BDC151298C1A7F000B63D0 /* ListDishesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +60,9 @@
 		D58EBE25298A7D5600E0B3CA /* DishPortraitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishPortraitCollectionViewCell.swift; sourceTree = "<group>"; };
 		D58EBE26298A7D5600E0B3CA /* DishPortraitCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishPortraitCollectionViewCell.xib; sourceTree = "<group>"; };
 		D58EBE29298A7F8D00E0B3CA /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
+		D5BDC14C298C1769000B63D0 /* DishListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListTableViewCell.swift; sourceTree = "<group>"; };
+		D5BDC14D298C1769000B63D0 /* DishListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishListTableViewCell.xib; sourceTree = "<group>"; };
+		D5BDC151298C1A7F000B63D0 /* ListDishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDishesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,7 @@
 		D531D6DE29891AC5006B3B84 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D5BDC150298C1A52000B63D0 /* ListDishes */,
 				D508FCEF298BF33A007DA296 /* DishDetail */,
 				D53EE557298969B9005487C4 /* Home */,
 				D531D6E029891AF2006B3B84 /* Onboarding */,
@@ -102,6 +109,7 @@
 		D531D6DF29891AE4006B3B84 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				D5BDC14A298C16B6000B63D0 /* TableViewCells */,
 				D58EBE21298A74A200E0B3CA /* CardView */,
 				D58EBE142989B0C800E0B3CA /* CollectionViewCells */,
 			);
@@ -213,6 +221,31 @@
 			path = DishLandScapeCollectionViewCell;
 			sourceTree = "<group>";
 		};
+		D5BDC14A298C16B6000B63D0 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				D5BDC14B298C1739000B63D0 /* DishListTableViewCell */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		D5BDC14B298C1739000B63D0 /* DishListTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D5BDC14C298C1769000B63D0 /* DishListTableViewCell.swift */,
+				D5BDC14D298C1769000B63D0 /* DishListTableViewCell.xib */,
+			);
+			path = DishListTableViewCell;
+			sourceTree = "<group>";
+		};
+		D5BDC150298C1A52000B63D0 /* ListDishes */ = {
+			isa = PBXGroup;
+			children = (
+				D5BDC151298C1A7F000B63D0 /* ListDishesViewController.swift */,
+			);
+			path = ListDishes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -278,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D58EBE192989B7C500E0B3CA /* CategoryCollectionViewCell.xib in Resources */,
+				D5BDC14F298C1769000B63D0 /* DishListTableViewCell.xib in Resources */,
 				D547520C2987ED390007C5C3 /* LaunchScreen.storyboard in Resources */,
 				D58EBE28298A7D5600E0B3CA /* DishPortraitCollectionViewCell.xib in Resources */,
 				D54752092987ED390007C5C3 /* Assets.xcassets in Resources */,
@@ -293,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5BDC14E298C1769000B63D0 /* DishListTableViewCell.swift in Sources */,
 				D58EBE182989B7C500E0B3CA /* CategoryCollectionViewCell.swift in Sources */,
 				D531D6E529891DD6006B3B84 /* UIView.swift in Sources */,
 				D54752002987ED360007C5C3 /* AppDelegate.swift in Sources */,
@@ -306,6 +341,7 @@
 				D58EBE1B2989BA0E00E0B3CA /* DishCategory.swift in Sources */,
 				D58EBE23298A74C500E0B3CA /* CardView.swift in Sources */,
 				D531D6E9298921FD006B3B84 /* OnboardingCollectionViewCell.swift in Sources */,
+				D5BDC152298C1A7F000B63D0 /* ListDishesViewController.swift in Sources */,
 				D58EBE2A298A7F8D00E0B3CA /* Dish.swift in Sources */,
 				D508FCF3298BF504007DA296 /* UIViewController+Extension.swift in Sources */,
 				D58EBE27298A7D5600E0B3CA /* DishPortraitCollectionViewCell.swift in Sources */,

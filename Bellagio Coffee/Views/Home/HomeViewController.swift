@@ -127,6 +127,10 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == categoryCollectionView {
             
+            let controller = ListDishesViewController.instantiate()
+            controller.category = categoties[indexPath.row]
+            navigationController?.pushViewController(controller, animated: true)
+            
         } else {
             let controller = DishDetailViewController.instantiate()
             
