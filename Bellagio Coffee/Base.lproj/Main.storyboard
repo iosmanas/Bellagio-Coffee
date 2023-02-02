@@ -306,6 +306,7 @@
                     <connections>
                         <outlet property="categoryCollectionView" destination="A5R-sh-fnu" id="fYW-Lb-E4B"/>
                         <outlet property="popularCollectionView" destination="mQR-sh-Vju" id="XB4-lk-uHD"/>
+                        <outlet property="specialsCollectionView" destination="y8A-LX-uQf" id="oQx-a1-sUD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9KC-Uh-5NC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D508FCED298BE765007DA296 /* DishLandscapeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D508FCEB298BE765007DA296 /* DishLandscapeCollectionViewCell.swift */; };
+		D508FCEE298BE765007DA296 /* DishLandscapeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D508FCEC298BE765007DA296 /* DishLandscapeCollectionViewCell.xib */; };
 		D531D6E229891B22006B3B84 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531D6E129891B22006B3B84 /* OnboardingViewController.swift */; };
 		D531D6E529891DD6006B3B84 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531D6E429891DD6006B3B84 /* UIView.swift */; };
 		D531D6E729891F7B006B3B84 /* OnboardingSlides.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531D6E629891F7B006B3B84 /* OnboardingSlides.swift */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D508FCEB298BE765007DA296 /* DishLandscapeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishLandscapeCollectionViewCell.swift; sourceTree = "<group>"; };
+		D508FCEC298BE765007DA296 /* DishLandscapeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishLandscapeCollectionViewCell.xib; sourceTree = "<group>"; };
 		D531D6E129891B22006B3B84 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		D531D6E429891DD6006B3B84 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		D531D6E629891F7B006B3B84 /* OnboardingSlides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlides.swift; sourceTree = "<group>"; };
@@ -189,6 +193,8 @@
 		D58EBE2B298A88E900E0B3CA /* DishLandScapeCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				D508FCEB298BE765007DA296 /* DishLandscapeCollectionViewCell.swift */,
+				D508FCEC298BE765007DA296 /* DishLandscapeCollectionViewCell.xib */,
 			);
 			path = DishLandScapeCollectionViewCell;
 			sourceTree = "<group>";
@@ -261,6 +267,7 @@
 				D547520C2987ED390007C5C3 /* LaunchScreen.storyboard in Resources */,
 				D58EBE28298A7D5600E0B3CA /* DishPortraitCollectionViewCell.xib in Resources */,
 				D54752092987ED390007C5C3 /* Assets.xcassets in Resources */,
+				D508FCEE298BE765007DA296 /* DishLandscapeCollectionViewCell.xib in Resources */,
 				D54752072987ED370007C5C3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +287,7 @@
 				D531D6E229891B22006B3B84 /* OnboardingViewController.swift in Sources */,
 				D53EE559298969D2005487C4 /* HomeViewController.swift in Sources */,
 				D58EBE202989BE5000E0B3CA /* Swift+Extension.swift in Sources */,
+				D508FCED298BE765007DA296 /* DishLandscapeCollectionViewCell.swift in Sources */,
 				D58EBE1B2989BA0E00E0B3CA /* DishCategory.swift in Sources */,
 				D58EBE23298A74C500E0B3CA /* CardView.swift in Sources */,
 				D531D6E9298921FD006B3B84 /* OnboardingCollectionViewCell.swift in Sources */,

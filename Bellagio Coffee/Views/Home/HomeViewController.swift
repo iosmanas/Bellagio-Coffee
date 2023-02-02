@@ -11,7 +11,7 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet weak var popularCollectionView: UICollectionView!
-    
+    @IBOutlet weak var specialsCollectionView: UICollectionView!
     
     
     var categoties: [DishCategory] = [
@@ -46,6 +46,8 @@ class HomeViewController: UIViewController {
         categoryCollectionView.dataSource = self
         
         
+        specialsCollectionView.dataSource = self
+        specialsCollectionView.delegate = self
         
 //        MARK: Private function register cells
         registerCells()
@@ -60,6 +62,7 @@ class HomeViewController: UIViewController {
         
         popularCollectionView.register(UINib(nibName: DishPortraitCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: DishPortraitCollectionViewCell.identifier)
         
+        specialsCollectionView.register(UINib(nibName: DishLandscapeCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: DishLandscapeCollectionViewCell.identifier)
         
     }
 
@@ -77,7 +80,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         case popularCollectionView:
             return populars.count
             
-        
+        case specialsCollectionView:
+            return specials.count
             
         default: return 0
         }
@@ -101,6 +105,12 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             
             return cell
             
+        case specialsCollectionView:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DishLandscapeCollectionViewCell.identifier, for: indexPath) as! DishLandscapeCollectionViewCell
+            
+            cell.setUp(dish: specials[indexPath.row])
+            
+            return cell
         
             
         default: return UICollectionViewCell()
