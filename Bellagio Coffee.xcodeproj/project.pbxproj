@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		D508FCED298BE765007DA296 /* DishLandscapeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D508FCEB298BE765007DA296 /* DishLandscapeCollectionViewCell.swift */; };
 		D508FCEE298BE765007DA296 /* DishLandscapeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D508FCEC298BE765007DA296 /* DishLandscapeCollectionViewCell.xib */; };
+		D508FCF1298BF369007DA296 /* DishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D508FCF0298BF369007DA296 /* DishDetailViewController.swift */; };
+		D508FCF3298BF504007DA296 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D508FCF2298BF504007DA296 /* UIViewController+Extension.swift */; };
 		D531D6E229891B22006B3B84 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531D6E129891B22006B3B84 /* OnboardingViewController.swift */; };
 		D531D6E529891DD6006B3B84 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531D6E429891DD6006B3B84 /* UIView.swift */; };
 		D531D6E729891F7B006B3B84 /* OnboardingSlides.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531D6E629891F7B006B3B84 /* OnboardingSlides.swift */; };
@@ -33,6 +35,8 @@
 /* Begin PBXFileReference section */
 		D508FCEB298BE765007DA296 /* DishLandscapeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishLandscapeCollectionViewCell.swift; sourceTree = "<group>"; };
 		D508FCEC298BE765007DA296 /* DishLandscapeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishLandscapeCollectionViewCell.xib; sourceTree = "<group>"; };
+		D508FCF0298BF369007DA296 /* DishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailViewController.swift; sourceTree = "<group>"; };
+		D508FCF2298BF504007DA296 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		D531D6E129891B22006B3B84 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		D531D6E429891DD6006B3B84 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		D531D6E629891F7B006B3B84 /* OnboardingSlides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlides.swift; sourceTree = "<group>"; };
@@ -67,6 +71,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D508FCEF298BF33A007DA296 /* DishDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D508FCF0298BF369007DA296 /* DishDetailViewController.swift */,
+			);
+			path = DishDetail;
+			sourceTree = "<group>";
+		};
 		D531D6DD29891ABD006B3B84 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +92,7 @@
 		D531D6DE29891AC5006B3B84 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D508FCEF298BF33A007DA296 /* DishDetail */,
 				D53EE557298969B9005487C4 /* Home */,
 				D531D6E029891AF2006B3B84 /* Onboarding */,
 			);
@@ -109,6 +122,7 @@
 			children = (
 				D531D6E429891DD6006B3B84 /* UIView.swift */,
 				D58EBE1F2989BE5000E0B3CA /* Swift+Extension.swift */,
+				D508FCF2298BF504007DA296 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -285,6 +299,7 @@
 				D531D6E729891F7B006B3B84 /* OnboardingSlides.swift in Sources */,
 				D54752022987ED360007C5C3 /* SceneDelegate.swift in Sources */,
 				D531D6E229891B22006B3B84 /* OnboardingViewController.swift in Sources */,
+				D508FCF1298BF369007DA296 /* DishDetailViewController.swift in Sources */,
 				D53EE559298969D2005487C4 /* HomeViewController.swift in Sources */,
 				D58EBE202989BE5000E0B3CA /* Swift+Extension.swift in Sources */,
 				D508FCED298BE765007DA296 /* DishLandscapeCollectionViewCell.swift in Sources */,
@@ -292,6 +307,7 @@
 				D58EBE23298A74C500E0B3CA /* CardView.swift in Sources */,
 				D531D6E9298921FD006B3B84 /* OnboardingCollectionViewCell.swift in Sources */,
 				D58EBE2A298A7F8D00E0B3CA /* Dish.swift in Sources */,
+				D508FCF3298BF504007DA296 /* UIViewController+Extension.swift in Sources */,
 				D58EBE27298A7D5600E0B3CA /* DishPortraitCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

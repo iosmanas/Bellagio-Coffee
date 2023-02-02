@@ -26,7 +26,7 @@ class HomeViewController: UIViewController {
     
     var populars: [Dish] = [
     
-        .init(id: "id1", name: "Borsok", image: "https://picsum.photos/100/200", description: "This is the best I have ever tasted", calories: 345),
+        .init(id: "id1", name: "Borsok", image: "https://picsum.photos/100/200", description: "This is the best I have ever tasted,This is the best I have ever tasted,This is the best I have ever tasted,This is the best I have ever tasted,This is the best I have ever tasted,This is the best I have ever tasted,This is the best I have ever tasted,", calories: 345),
         .init(id: "id1", name: "New York", image: "https://picsum.photos/100/200", description: "This is the best I have ever tasted", calories: 145),
         .init(id: "id1", name: "Pizza", image: "https://picsum.photos/100/200", description: "This is the best I have ever tasted", calories: 3435),
     
@@ -123,6 +123,19 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         
     }
     
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == categoryCollectionView {
+            
+        } else {
+            let controller = DishDetailViewController.instantiate()
+            
+            controller.dish = collectionView == popularCollectionView ? populars[indexPath.row] : specials[indexPath.row]
+            
+            navigationController?.pushViewController(controller, animated: true)
+            
+        }
+    }
     
 }
 

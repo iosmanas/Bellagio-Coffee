@@ -313,6 +313,108 @@
             </objects>
             <point key="canvasLocation" x="2059.4202898550725" y="97.767857142857139"/>
         </scene>
+        <!--Dish Detail View Controller-->
+        <scene sceneID="8Lw-r9-fBb">
+            <objects>
+                <viewController storyboardIdentifier="DishDetailViewController" id="hth-hE-qVM" customClass="DishDetailViewController" customModule="Bellagio_Coffee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5MF-4R-4gZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BMv-hF-KHz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="596"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="mfh-15-Lwl">
+                                <rect key="frame" x="16" y="612" width="382" height="234"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vkm-yB-EDb">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="24"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4O-Kb-LVg">
+                                                <rect key="frame" x="0.0" y="0.0" width="282" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Ytm-vD-6h8">
+                                                <rect key="frame" x="282" y="0.0" width="100" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="pVu-ep-Jrm"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOF-3u-FpS">
+                                        <rect key="frame" x="0.0" y="40" width="382" height="62"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">While eating at a restaurant is an enjoyable and convenient occasional treat, most individuals and families prepare their meals at home.</string>
+                                                <attributes>
+                                                    <color key="NSColor" systemColor="systemGrayColor"/>
+                                                    <font key="NSFont" metaFont="system" size="15"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PDV-c6-Vtr">
+                                        <rect key="frame" x="0.0" y="118" width="382" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="8gv-Le-5R8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bf4-Py-XHL">
+                                        <rect key="frame" x="0.0" y="184" width="382" height="50"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="6bl-ig-O0Q"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Place Order">
+                                            <color key="baseForegroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="placeOrderBtnClicked:" destination="hth-hE-qVM" eventType="touchUpInside" id="WKd-aE-4UR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vqj-3n-hfn"/>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Vqj-3n-hfn" firstAttribute="trailing" secondItem="mfh-15-Lwl" secondAttribute="trailing" constant="16" id="2hf-kK-Mwe"/>
+                            <constraint firstItem="mfh-15-Lwl" firstAttribute="top" secondItem="BMv-hF-KHz" secondAttribute="bottom" constant="16" id="BgG-yo-jAn"/>
+                            <constraint firstItem="BMv-hF-KHz" firstAttribute="top" secondItem="5MF-4R-4gZ" secondAttribute="top" id="YxS-Ze-fYp"/>
+                            <constraint firstItem="Vqj-3n-hfn" firstAttribute="bottom" secondItem="mfh-15-Lwl" secondAttribute="bottom" constant="16" id="o0h-iY-cf1"/>
+                            <constraint firstItem="BMv-hF-KHz" firstAttribute="leading" secondItem="Vqj-3n-hfn" secondAttribute="leading" id="tZz-GE-La1"/>
+                            <constraint firstItem="mfh-15-Lwl" firstAttribute="leading" secondItem="Vqj-3n-hfn" secondAttribute="leading" constant="16" id="yFe-iA-xlK"/>
+                            <constraint firstItem="BMv-hF-KHz" firstAttribute="trailing" secondItem="Vqj-3n-hfn" secondAttribute="trailing" id="zgR-rP-LcU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="caloriesLbl" destination="Ytm-vD-6h8" id="6TF-ok-kJF"/>
+                        <outlet property="descriptionLbl" destination="pOF-3u-FpS" id="bHT-yk-6tc"/>
+                        <outlet property="dishImageView" destination="BMv-hF-KHz" id="svG-Yh-H4W"/>
+                        <outlet property="nameField" destination="PDV-c6-Vtr" id="eXl-bf-zKR"/>
+                        <outlet property="titleLbl" destination="e4O-Kb-LVg" id="cKr-2U-EZz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BI0-ZJ-2G9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3005.7971014492755" y="97.767857142857139"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Rkr-xB-h6t">
             <objects>
@@ -343,8 +445,14 @@
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
