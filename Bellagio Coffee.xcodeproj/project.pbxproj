@@ -33,6 +33,7 @@
 		D597D75B298D13D300C3CFA9 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D597D75A298D13D300C3CFA9 /* NetworkService.swift */; };
 		D597D75D298D14E700C3CFA9 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = D597D75C298D14E700C3CFA9 /* Route.swift */; };
 		D597D75F298D165500C3CFA9 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = D597D75E298D165500C3CFA9 /* Method.swift */; };
+		D597D761298D36F000C3CFA9 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D597D760298D36F000C3CFA9 /* AppError.swift */; };
 		D5BDC14E298C1769000B63D0 /* DishListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BDC14C298C1769000B63D0 /* DishListTableViewCell.swift */; };
 		D5BDC14F298C1769000B63D0 /* DishListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5BDC14D298C1769000B63D0 /* DishListTableViewCell.xib */; };
 		D5BDC152298C1A7F000B63D0 /* ListDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BDC151298C1A7F000B63D0 /* ListDishesViewController.swift */; };
@@ -68,6 +69,7 @@
 		D597D75A298D13D300C3CFA9 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		D597D75C298D14E700C3CFA9 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		D597D75E298D165500C3CFA9 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		D597D760298D36F000C3CFA9 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		D5BDC14C298C1769000B63D0 /* DishListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListTableViewCell.swift; sourceTree = "<group>"; };
 		D5BDC14D298C1769000B63D0 /* DishListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishListTableViewCell.xib; sourceTree = "<group>"; };
 		D5BDC151298C1A7F000B63D0 /* ListDishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDishesViewController.swift; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 				D597D75A298D13D300C3CFA9 /* NetworkService.swift */,
 				D597D75C298D14E700C3CFA9 /* Route.swift */,
 				D597D75E298D165500C3CFA9 /* Method.swift */,
+				D597D760298D36F000C3CFA9 /* AppError.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				D58EBE23298A74C500E0B3CA /* CardView.swift in Sources */,
 				D531D6E9298921FD006B3B84 /* OnboardingCollectionViewCell.swift in Sources */,
 				D5BDC152298C1A7F000B63D0 /* ListDishesViewController.swift in Sources */,
+				D597D761298D36F000C3CFA9 /* AppError.swift in Sources */,
 				D58EBE2A298A7F8D00E0B3CA /* Dish.swift in Sources */,
 				D508FCF3298BF504007DA296 /* UIViewController+Extension.swift in Sources */,
 				D58EBE27298A7D5600E0B3CA /* DishPortraitCollectionViewCell.swift in Sources */,

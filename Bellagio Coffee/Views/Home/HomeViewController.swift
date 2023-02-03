@@ -42,10 +42,6 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let service = NetWorkService()
-        let request = service.createRequest(route: .temp, method: .post, parameters: ["firstName" : "Manas", "lastName": "Duishoev"])
-        print("The URL is: \(request?.url )")
-        print("The body is \(request?.httpBody)")
 
         categoryCollectionView.delegate = self
         categoryCollectionView.dataSource = self
@@ -56,6 +52,8 @@ class HomeViewController: UIViewController {
         
 //        MARK: Private function register cells
         registerCells()
+        
+        NetWorkService.shared.myFirstRequest()
         
     }
     
