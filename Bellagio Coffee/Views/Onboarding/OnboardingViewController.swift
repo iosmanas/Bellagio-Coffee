@@ -34,6 +34,8 @@ class OnboardingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+
+        
 // Protocol DataSource and Delegate
         
         collectionView.delegate = self

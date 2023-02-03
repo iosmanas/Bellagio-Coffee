@@ -30,6 +30,9 @@
 		D58EBE27298A7D5600E0B3CA /* DishPortraitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58EBE25298A7D5600E0B3CA /* DishPortraitCollectionViewCell.swift */; };
 		D58EBE28298A7D5600E0B3CA /* DishPortraitCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D58EBE26298A7D5600E0B3CA /* DishPortraitCollectionViewCell.xib */; };
 		D58EBE2A298A7F8D00E0B3CA /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58EBE29298A7F8D00E0B3CA /* Dish.swift */; };
+		D597D75B298D13D300C3CFA9 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D597D75A298D13D300C3CFA9 /* NetworkService.swift */; };
+		D597D75D298D14E700C3CFA9 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = D597D75C298D14E700C3CFA9 /* Route.swift */; };
+		D597D75F298D165500C3CFA9 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = D597D75E298D165500C3CFA9 /* Method.swift */; };
 		D5BDC14E298C1769000B63D0 /* DishListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BDC14C298C1769000B63D0 /* DishListTableViewCell.swift */; };
 		D5BDC14F298C1769000B63D0 /* DishListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5BDC14D298C1769000B63D0 /* DishListTableViewCell.xib */; };
 		D5BDC152298C1A7F000B63D0 /* ListDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BDC151298C1A7F000B63D0 /* ListDishesViewController.swift */; };
@@ -62,6 +65,9 @@
 		D58EBE25298A7D5600E0B3CA /* DishPortraitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishPortraitCollectionViewCell.swift; sourceTree = "<group>"; };
 		D58EBE26298A7D5600E0B3CA /* DishPortraitCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishPortraitCollectionViewCell.xib; sourceTree = "<group>"; };
 		D58EBE29298A7F8D00E0B3CA /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
+		D597D75A298D13D300C3CFA9 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		D597D75C298D14E700C3CFA9 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		D597D75E298D165500C3CFA9 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		D5BDC14C298C1769000B63D0 /* DishListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListTableViewCell.swift; sourceTree = "<group>"; };
 		D5BDC14D298C1769000B63D0 /* DishListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishListTableViewCell.xib; sourceTree = "<group>"; };
 		D5BDC151298C1A7F000B63D0 /* ListDishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDishesViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +174,7 @@
 		D54751FE2987ED360007C5C3 /* Bellagio Coffee */ = {
 			isa = PBXGroup;
 			children = (
+				D597D759298D13BE00C3CFA9 /* Networking */,
 				D531D6E329891DB8006B3B84 /* Extensions */,
 				D531D6DF29891AE4006B3B84 /* CustomViews */,
 				D531D6DE29891AC5006B3B84 /* Views */,
@@ -225,6 +232,16 @@
 				D508FCEC298BE765007DA296 /* DishLandscapeCollectionViewCell.xib */,
 			);
 			path = DishLandScapeCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		D597D759298D13BE00C3CFA9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D597D75A298D13D300C3CFA9 /* NetworkService.swift */,
+				D597D75C298D14E700C3CFA9 /* Route.swift */,
+				D597D75E298D165500C3CFA9 /* Method.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		D5BDC14A298C16B6000B63D0 /* TableViewCells */ = {
@@ -349,11 +366,14 @@
 				D54752002987ED360007C5C3 /* AppDelegate.swift in Sources */,
 				D531D6E729891F7B006B3B84 /* OnboardingSlides.swift in Sources */,
 				D54752022987ED360007C5C3 /* SceneDelegate.swift in Sources */,
+				D597D75F298D165500C3CFA9 /* Method.swift in Sources */,
 				D531D6E229891B22006B3B84 /* OnboardingViewController.swift in Sources */,
 				D508FCF1298BF369007DA296 /* DishDetailViewController.swift in Sources */,
 				D53EE559298969D2005487C4 /* HomeViewController.swift in Sources */,
 				D58EBE202989BE5000E0B3CA /* Swift+Extension.swift in Sources */,
 				D508FCED298BE765007DA296 /* DishLandscapeCollectionViewCell.swift in Sources */,
+				D597D75D298D14E700C3CFA9 /* Route.swift in Sources */,
+				D597D75B298D13D300C3CFA9 /* NetworkService.swift in Sources */,
 				D58EBE1B2989BA0E00E0B3CA /* DishCategory.swift in Sources */,
 				D58EBE23298A74C500E0B3CA /* CardView.swift in Sources */,
 				D531D6E9298921FD006B3B84 /* OnboardingCollectionViewCell.swift in Sources */,
