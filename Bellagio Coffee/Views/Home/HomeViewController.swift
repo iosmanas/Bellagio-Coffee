@@ -53,7 +53,14 @@ class HomeViewController: UIViewController {
 //        MARK: Private function register cells
         registerCells()
         
-        NetWorkService.shared.myFirstRequest()
+        NetWorkService.shared.fetchAllCategories { [weak self] (result) in
+            switch result {
+            case .success(let allDishes):
+                print("It was successful")
+            case .failure(let error):
+                print("The error is: \(error.localizedDescription)")
+            }
+        }
         
     }
     
